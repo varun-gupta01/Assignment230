@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+#include <cctype>  
+#include <map>     
+using namespace std;
+
+void countFrequency(string str) {
+    map<char, int> freq;  
+
+    for (char ch : str) {
+        if (isalnum(ch)) {  
+            ch = tolower(ch); 
+            freq[ch]++;         
+        }
+    }
+
+    for (auto& pair : freq) {
+        cout << pair.first << ": " << pair.second << endl;
+    }
+}
+
+int main() {
+    string str;
+    cout << "Enter a string: ";
+    getline(cin, str);
+
+    countFrequency(str);
+
+    return 0;
+}
