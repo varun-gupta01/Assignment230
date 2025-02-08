@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a[5],i;
+    cout<<"Provide array elelments :";
+    for(i=0;i<3;i++)
+    {
+        for(i=0;i<5;i++)
+        {
+            cin>>a[i];
+        }
+    }
+    cout<<"After reversing"<<endl;
+    for(i=4;i>=0;i--){
+        cout<<a[i]<<" ";
+    }
+   
+}
