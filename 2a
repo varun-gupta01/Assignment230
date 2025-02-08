@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int x, i;
+    cout<<"Provide size of array :";
+    cin>>x;
+    int a[x];
+    cout<<"Provide array elements :";
+    for(i=0;i<x;i++)
+    {
+       cin>>a[i];
+    }
+    
+}
